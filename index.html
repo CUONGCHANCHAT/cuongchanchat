@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173d32">
+  <meta name="description" content="CƯỜNG CHÂN CHẤT (v1.0) — Sống thật, sống tử tế, sống có ích. Câu chuyện về sức khỏe, marathon 21km, học AI ở tuổi 55 và lòng biết ơn của Lăng Đình Cường.">
+  <title>CƯỜNG CHÂN CHẤT | Sống thật – Sống tử tế – Sống có ích (v1.0)</title>
+  
+  <!-- Phông chữ Google Fonts chuẩn mực cho việc đọc sách -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Thanh tiến trình cuộn trang -->
+  <div id="readingProgress" role="progressbar" aria-label="Tiến trình đọc trang"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#dau-trang" aria-label="Cường Chân Chất - Về đầu trang">
+        <span class="brand-mark">C</span>
+        <span>CƯỜNG CHÂN CHẤT</span>
+      </a>
+
+      <!-- Menu Điều hướng -->
+      <nav class="nav-links" id="navLinks" aria-label="Menu chính">
+        <a href="#cau-chuyen">Câu chuyện</a>
+        <a href="#hanh-trinh">Hành trình</a>
+        <a href="#gia-tri">Giá trị sống</a>
+        <a href="#goc-viet">Góc chia sẻ</a>
+        <a href="#so-tay">Sổ biết ơn</a>
+        <a href="#ket-noi">Kết nối</a>
+      </nav>
+
+      <!-- Thanh công cụ tiện ích (Âm thanh, Cỡ chữ, Theme) -->
+      <div class="nav-tools">
+        <!-- Nút âm thanh thiên nhiên thư thái -->
+        <button class="tool-btn ambient-btn" id="ambientToggleBtn" title="Bật âm thanh thiên nhiên thư thái">
+          <span class="sound-icon">🍃</span>
+          <span class="sound-wave">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <!-- Nút chỉnh cỡ chữ -->
+        <button class="tool-btn" id="fontDecBtn" title="Giảm cỡ chữ">A-</button>
+        <button class="tool-btn" id="fontIncBtn" title="Tăng cỡ chữ">A+</button>
+
+        <!-- Nút đổi giao diện đọc (Mộc / Sách / Đêm) -->
+        <button class="tool-btn" id="themeToggleBtn" title="Đổi màu sắc đọc sách">🌿 Mộc</button>
+
+        <!-- Nút mở menu di động -->
+        <button class="menu-btn" id="menuBtn" aria-label="Mở menu điều hướng">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- NỘI DUNG CHÍNH -->
+  <main id="dau-trang">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Người truyền lực bằng đời sống thực</span>
+          <h1>Sống thật.<br><span>Sống tử tế.</span><br>Sống có ích.</h1>
+          <p>Tôi là <strong>Lăng Đình Cường</strong>. Tôi không kể chuyện để tỏ ra mình giỏi hơn ai. Tôi chỉ muốn chia sẻ những điều đã trải qua, những bài học từ vực sâu bệnh tật đến đường chạy marathon 21km và niềm say mê học công nghệ ở tuổi 55.</p>
+          <div class="hero-quote">“Càng đi xa, càng cần biết đường trở về.”</div>
+          <div class="actions">
+            <a class="btn btn-gold" href="#cau-chuyen">Đọc câu chuyện của tôi</a>
+            <button class="btn btn-ai" data-open-ai="true">💬 Trò chuyện cùng AI Chú Cường</button>
+            <a class="btn btn-outline" href="#goc-viet">Ghé góc chia sẻ</a>
+          </div>
+        </div>
+
+        <!-- TRANH MINH HỌA NGHỆ THUẬT VĂN HÓA THUẦN VIỆT -->
+        <div class="hero-art" role="img" aria-label="Minh họa bình minh lên trên dãy đồi xanh mướt và người bộ hành thong dong trên con đường trở về cội nguồn">
+          <div class="sun"></div>
+          <div class="hill back"></div>
+          <div class="hill"></div>
+          <div class="path"></div>
+          <div class="figure"></div>
+          <div class="art-caption">Một ngày mới · Một bước chân mới</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: CÂU CHUYỆN PHÍA SAU CÁI TÊN -->
+    <section class="section" id="cau-chuyen">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Câu chuyện phía sau cái tên</span>
+          <h2>Tôi không bắt đầu từ sự hoàn hảo.</h2>
+          <p>Tôi bắt đầu từ những ngày khó khăn, từ lòng biết ơn và từ mong muốn sống có ích hơn khi tuổi đời ngày một nhiều.</p>
+        </div>
+
+        <div class="story-grid">
+          <aside class="story-note">
+            <div class="big-number">55</div>
+            <small>Tuổi đời · Một chặng mới</small>
+            <p>Có những điều phải đi qua nửa đời người, ta mới hiểu: <strong>sức khỏe, gia đình, sự bình an và lòng tử tế</strong> quý giá đến nhường nào.</p>
+            <p><strong>Không cần hơn người khác.</strong> Chỉ cần hôm nay tốt hơn chính mình của ngày hôm qua.</p>
+          </aside>
+
+          <article class="story-copy">
+            <p>Tôi là <strong>Lăng Đình Cường</strong>, một người đàn ông lớn lên từ đời sống bình dị. Tôi hiểu cảm giác thiếu thốn, hiểu những ngày cơ thể yếu đuối và hiểu rằng không phải lúc nào cuộc đời cũng đi theo điều mình mong muốn.</p>
+            
+            <p>Ngày trước, tôi từng có thời điểm sụt cân nghiêm trọng, chỉ nặng <strong>39 kg</strong> trước một ca phẫu thuật. Những năm tháng giằng co với bệnh tật ấy đã để lại trong tôi một bài học khắc cốt ghi tâm: <strong>sức khỏe không phải thứ có thể đem ra mặc cả mãi với cuộc đời.</strong></p>
+            
+            <p>Từ đó, tôi kiên trì học cách chăm sóc bản thân bằng những việc gần gũi: ăn uống điều độ, ngủ nghỉ hợp lý, vận động, tập thở sâu, giữ tâm bình tĩnh và biết ơn những gì mình đang có. Tôi chia sẻ đây là trải nghiệm chân thật của riêng mình, không phải lời hứa chữa khỏi bệnh hay thay thế cho tư vấn y tế.</p>
+            
+            <p class="pullquote">“Tôi không cần chứng minh mình trẻ. Tôi chỉ muốn mỗi ngày còn đủ sức để yêu thương, học hỏi và làm một việc có ích.”</p>
+            
+            <p>Ở tuổi 55, tôi vẫn học công nghệ mới, tìm hiểu trí tuệ nhân tạo (AI), tập làm nội dung số và bắt đầu những việc trước đây mình chưa từng biết. Tôi nhận ra tuổi tác không nhất thiết đóng cánh cửa lại. Đôi khi, nó chỉ nhắc ta chọn điều đáng làm hơn.</p>
+            
+            <p>Và có một kỷ niệm tôi muốn giữ thật lâu trong đời: ngày <strong>5 tháng 4 năm 2026</strong>, tôi đã hoàn thành cự ly <strong>21 km tại Đền Hùng Marathon – “Về Nguồn”</strong>. Tấm huy chương ấy không chỉ ghi dấu một giải chạy, mà là lời nhắc nhở rằng: nếu còn biết cố gắng và yêu quý bản thân, ta vẫn có thể viết tiếp câu chuyện rực rỡ của cuộc đời mình.</p>
+            
+            <p>Tôi lập góc nhỏ <strong>CƯỜNG CHÂN CHẤT</strong> để kể chuyện sức khỏe, cha mẹ, vợ chồng, gia đình, học hỏi và lòng biết ơn. Không phải để dạy ai sống thế nào. Chỉ mong một câu chuyện thật có thể tiếp thêm cho ai đó chút lửa ấm để bước tiếp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: HÀNH TRÌNH & DẤU MỐC -->
+    <section class="section timeline" id="hanh-trinh">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Những dấu mốc đáng nhớ</span>
+          <h2>Đường dài được làm nên từ những bước nhỏ.</h2>
+          <p>Không phải bước nào cũng dễ dàng. Nhưng mỗi bước đều dạy cho ta một bài học quý giá.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <article class="milestone">
+            <span class="badge">Bài học đầu đời</span>
+            <h3>Biết quý sức khỏe</h3>
+            <p>Từ những ngày nằm viện yếu đuối với thể trạng 39kg, tôi học cách lắng nghe từng nhịp thở, chăm sóc cơ thể và không bao giờ xem sức khỏe là điều hiển nhiên.</p>
+          </article>
+
+          <article class="milestone">
+            <span class="badge">05 · 04 · 2026</span>
+            <h3>21 km Về Nguồn</h3>
+            <p>Hoàn thành cự ly Half Marathon tại Đền Hùng ở tuổi 55. Một tấm huy chương nhỏ, một niềm hạnh phúc lớn lao và một lời hứa sống kiên cường trao lại cho con cháu.</p>
+          </article>
+
+          <article class="milestone">
+            <span class="badge">Tuổi 55 không rào cản</span>
+            <h3>Học AI & Công nghệ</h3>
+            <p>Từ người lạ lẫm với máy tính đến việc tự tìm tòi Prompt AI, học lập trình, dựng website và làm nội dung số. Chậm cũng được, miễn là còn tò mò và chịu bắt đầu.</p>
+          </article>
+
+          <article class="milestone">
+            <span class="badge">Mỗi ngày mới</span>
+            <h3>Lan tỏa điều tử tế</h3>
+            <p>Xây dựng góc nhỏ Chân Chất, viết nhật ký biết ơn, kết nối với những người bạn cùng chung chí hướng sống thật, sống tử tế và sống có ích.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: GIÁ TRỊ SỐNG CỐT LÕI -->
+    <section class="section" id="gia-tri">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Điều tôi muốn giữ</span>
+          <h2>Năm điều làm gốc cho một đời sống bình an.</h2>
+          <p>Không phải khẩu hiệu treo trên tường. Đó là những nguyên tắc tôi luôn tự nhắc mình trong từng lựa chọn hằng ngày.</p>
+        </div>
+
+        <div class="values">
+          <div class="value">
+            <span class="icon">🌿</span>
+            <h3>Biết đủ</h3>
+            <p>Không ngừng cố gắng làm ăn chân chính, nhưng không để lòng tham và sự so bì lấy đi sự bình yên nội tại.</p>
+          </div>
+
+          <div class="value">
+            <span class="icon">🙏</span>
+            <h3>Biết ơn</h3>
+            <p>Nhớ người đã thương mình lúc ngặt nghèo, nhớ những điều bình thường đang âm thầm nâng đỡ ta mỗi ngày.</p>
+          </div>
+
+          <div class="value">
+            <span class="icon">🍃</span>
+            <h3>Thuận tự nhiên</h3>
+            <p>Kiên trì làm điều đúng đắn, biết nhịp sinh học của cơ thể, biết lúc nào cần tiến và khi nào cần buông nghỉ.</p>
+          </div>
+
+          <div class="value">
+            <span class="icon">🤝</span>
+            <h3>Sống tử tế</h3>
+            <p>Đối xử chân thành, giữ trọn chữ tín và tuyệt đối đừng làm khó người khác nếu không cần thiết.</p>
+          </div>
+
+          <div class="value">
+            <span class="icon">☀️</span>
+            <h3>An nhiên</h3>
+            <p>Chăm lo chu đáo những điều trong tầm tay mình, bớt lo âu những chuyện nằm ngoài tầm kiểm soát.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: GÓC CHIA SẺ & BÀI VIẾT TOÀN VĂN -->
+    <section class="section posts" id="goc-viet">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Góc chia sẻ tâm tình</span>
+          <h2>Những chuyện nhỏ, những điều muốn gửi lại.</h2>
+          <p>Mỗi bài viết là một lời nhắc nhẹ nhàng để chúng ta sống sâu hơn, thương nhau nhiều hơn và chăm sóc cuộc đời mình tốt hơn.</p>
+        </div>
+
+        <!-- Thanh tìm kiếm & Bộ lọc bài viết -->
+        <div class="posts-filter-bar">
+          <div class="filter-tags">
+            <button class="filter-btn active" data-category="all">Tất cả bài viết</button>
+            <button class="filter-btn" data-category="health">🌿 Sức khỏe & Thói quen</button>
+            <button class="filter-btn" data-category="family">👨‍👩‍👧 Gia đình & Tình nghĩa</button>
+            <button class="filter-btn" data-category="learning">🧠 Học hỏi & AI</button>
+            <button class="filter-btn" data-category="philosophy">☀️ Triết lý sống</button>
+          </div>
+
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="postSearch" placeholder="Tìm kiếm bài viết..." aria-label="Tìm kiếm bài viết">
+          </div>
+        </div>
+
+        <!-- Danh sách bài viết -->
+        <div class="post-grid" id="postsGrid">
+          <!-- Render tự động bởi main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: SỔ TAY BIẾT ƠN TƯƠNG TÁC (GRATITUDE JOURNAL) -->
+    <section class="section gratitude-section" id="so-tay">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Góc thực hành mỗi ngày</span>
+          <h2>Sổ tay biết ơn tương tác</h2>
+          <p>Hạnh phúc không ở đâu xa. Nó nở hoa ngay trong giây phút ta nhận ra và biết ơn những điều bình dị xung quanh mình.</p>
+        </div>
+
+        <div class="gratitude-box">
+          <h3 style="color: var(--forest); font-size: 22px; margin-bottom: 6px;">Hôm nay bạn biết ơn điều gì?</h3>
+          <p style="color: var(--muted); font-size: 14.5px;">Hãy ghi lại 1 điều bạn cảm thấy biết ơn trong ngày hôm nay. Dữ liệu được lưu trữ an toàn riêng tư ngay trên thiết bị của bạn.</p>
+
+          <form class="gratitude-form" id="gratitudeForm">
+            <input type="text" id="gratitudeInput" placeholder="Ví dụ: Biết ơn vì hôm nay cả nhà đều khỏe mạnh, bữa cơm tối rất ấm cúng..." required>
+            <button class="btn btn-gold" type="submit">Lưu vào sổ tay</button>
+          </form>
+
+          <div class="gratitude-list" id="gratitudeList">
+            <!-- Danh sách điều biết ơn render tự động -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: LỜI NHẮN GỬI (MANIFESTO) -->
+    <section class="manifesto">
+      <div class="wrap">
+        <span class="eyebrow" style="color: var(--gold);">Lời nhắn gửi chân tình</span>
+        <h2>Tôi không mong ai ngưỡng mộ mình.<br>Tôi mong ai đó có thêm niềm tin vào chính họ.</h2>
+        <p>Nếu câu chuyện đời thường của tôi giúp bạn gọi điện về nhà hỏi thăm cha mẹ, đi bộ thêm mười phút, học thêm một điều mới hay đối xử tử tế hơn với người bên cạnh, như thế đã là một món quà vô giá.</p>
+        <div class="signature">Cường Chân Chất</div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: KẾT NỐI CHÂN THÀNH -->
+    <section class="section" id="ket-noi">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Kết nối chân thành</span>
+          <h2>Ta có thể học được điều gì từ câu chuyện của nhau?</h2>
+          <p>Hãy để lại một lời nhắn hoặc một chủ đề bạn muốn cùng trao đổi. Bản lưu sẽ được tạo ngay trên máy của bạn để lưu giữ kỷ niệm.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <h3 style="font-size: 30px; color: var(--forest); margin-bottom: 16px;">Một góc nhỏ dành cho người thích sống thật.</h3>
+            <p style="font-size: 17px; line-height: 1.8; color: var(--ink-light); margin-bottom: 20px;">Tôi rất trân trọng cơ hội được kết nối với những người bạn đang quan tâm đến sức khỏe tự nhiên, gia đình, đạo làm con, học hỏi công nghệ và cách lan tỏa giá trị tử tế trên không gian mạng.</p>
+            
+            <p><strong>Những chủ đề chúng ta có thể cùng đàm đạo:</strong></p>
+            <ul style="padding-left: 20px; line-height: 2; color: var(--muted); margin-top: 10px;">
+              <li>Thói quen thở sâu, đi bộ và rèn luyện thể lực sau biến cố bệnh tật.</li>
+              <li>Kinh nghiệm tập luyện để hoàn thành 21km Marathon Đền Hùng ở tuổi 55.</li>
+              <li>Cách một người trung niên học AI và làm chủ công cụ số từ con số không.</li>
+              <li>Chữ "Hiếu" với cha mẹ già và cách giữ lửa ấm trong hôn nhân dài lâu.</li>
+            </ul>
+          </div>
+
+          <form class="contact-card" id="messageForm">
+            <h3>Gửi lời nhắn</h3>
+            <p style="margin-bottom: 14px;">Chia sẻ đôi dòng tâm tư của bạn với chú Cường:</p>
+            <input id="name" name="name" placeholder="Họ và tên của bạn" required>
+            <input id="email" name="email" type="email" placeholder="Địa chỉ Email (để tiện phản hồi)">
+            <textarea id="message" name="message" placeholder="Bạn muốn chia sẻ hoặc hỏi chú Cường điều gì?" required></textarea>
+            <button class="btn btn-gold" type="submit" style="width: 100%; margin-top: 8px;">Tạo & Lưu Lời Nhắn</button>
+            <div class="note" id="formNote">Lời nhắn sẽ được tạo bản lưu trực tiếp trên thiết bị của bạn.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="brand" style="color: #f8f2e5">
+        <span class="brand-mark" style="background: var(--gold); color: #173d32">C</span>
+        <span>CƯỜNG CHÂN CHẤT</span>
+      </div>
+      <div class="footer-small">SỐNG THẬT · SỐNG TỬ TẾ · SỐNG CÓ ÍCH</div>
+      <div class="footer-small">© <span id="year">2026</span> Lăng Đình Cường. Phiên bản v1.0</div>
+    </div>
+  </footer>
+
+  <!-- NÚT LÊN ĐẦU TRANG -->
+  <button class="top" id="topBtn" aria-label="Lên đầu trang" title="Lên đầu trang">↑</button>
+
+  <!-- MODAL ĐỌC TOÀN VĂN BÀI VIẾT -->
+  <div class="article-modal" id="articleModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="eyebrow" style="margin-bottom: 0;">Góc Đọc Sách Chân Chất</span>
+        <button class="modal-close" id="modalClose" aria-label="Đóng bài viết">✕</button>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Nội dung bài viết được nạp động -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="modalSpeakBtn" style="color: var(--forest); border-color: var(--line);">
+          🔊 Nghe đọc bài
+        </button>
+        <button class="btn btn-gold" id="modalAskAIBtn">
+          💬 Hỏi AI Chú Cường về bài này
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WIDGET TRỢ LÝ AI CHÂN CHẤT (AI TÂM TÌNH) -->
+  <div class="ai-widget-launcher">
+    <div class="ai-tooltip">Trò chuyện cùng Chú Cường (AI) 👋</div>
+    <button class="ai-launcher-btn" id="aiLauncherBtn" aria-label="Mở Trợ lý AI Chú Cường" title="Mở Trợ lý AI">
+      💬
+    </button>
+  </div>
+
+  <!-- CỬA SỔ CHAT AI -->
+  <div class="ai-chat-window" id="aiChatWindow" role="dialog" aria-label="Cửa sổ trò chuyện cùng Chú Cường AI">
+    <div class="ai-chat-header">
+      <div class="ai-header-info">
+        <div class="ai-avatar">C</div>
+        <div class="ai-header-title">
+          <h4>Chú Cường (AI Tâm Tình)</h4>
+          <span>Đang trực tuyến · Sống thật & Tử tế</span>
+        </div>
+      </div>
+      <div class="ai-header-actions">
+        <button id="aiSpeechToggle" title="Bật/Tắt đọc bằng giọng nói">🔊</button>
+        <button id="aiClearBtn" title="Xóa lịch sử trò chuyện">🗑️</button>
+        <button id="aiCloseBtn" title="Thu nhỏ cửa sổ">✕</button>
+      </div>
+    </div>
+
+    <div class="ai-chat-body" id="aiChatBody">
+      <!-- Lịch sử tin nhắn được nạp bởi ai-assistant.js -->
+    </div>
+
+    <!-- Gợi ý câu hỏi nhanh -->
+    <div style="padding: 0 16px 8px; background: var(--cream);">
+      <div class="quick-prompts">
+        <button class="quick-chip" data-prompt="Bí quyết chú Cường chinh phục 21km ở tuổi 55?">🏃‍♂️ Chạy 21km ở tuổi 55</button>
+        <button class="quick-chip" data-prompt="Chú Cường học AI như thế nào khi đã 55 tuổi?">🧠 Học AI từ số 0</button>
+        <button class="quick-chip" data-prompt="Làm sao để giữ tâm an nhiên và sống biết đủ?">🌿 Sống an nhiên & Biết đủ</button>
+        <button class="quick-chip" data-prompt="Chú Cường phục hồi sức khỏe từ 39kg ra sao?">🫁 Vượt qua 39kg</button>
+      </div>
+    </div>
+
+    <div class="ai-chat-footer">
+      <input type="text" id="aiChatInput" placeholder="Tâm sự cùng chú Cường..." aria-label="Nhập tin nhắn">
+      <button class="ai-send-btn" id="aiSendBtn" aria-label="Gửi tin nhắn">➤</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT LOGIC -->
+  <script src="js/ai-assistant.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
